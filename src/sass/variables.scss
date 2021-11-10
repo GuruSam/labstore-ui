@@ -1,0 +1,14 @@
+@import '~vuetify/src/styles/settings/colors';
+
+$material-dark: (
+        'background': #080808,
+        'text': (
+                'theme': map-get($shades, 'white'),
+                'primary': map-get($cyan, 'darken-3'),
+                'secondary': rgba(map-get($shades, 'white'), 0.7),
+                'disabled': rgba(map-get($shades, 'white'), 0.5),
+                'link': map-get($cyan, 'lighten-1'),
+                'link-hover': map-get($cyan, 'accent-3')
+        ),
+        'cards': #111
+);

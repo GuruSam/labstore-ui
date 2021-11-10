@@ -1,0 +1,73 @@
+@import '~vuetify/src/styles/settings/_colors.scss'
+
+.v-application
+  .headline
+    color: map-get($cyan, 'lighten-2'),
+  .display-4
+    color: map-get($cyan, 'lighten-2'),
+  .display-3
+    color: map-get($cyan, 'lighten-2'),
+  .display-2
+    color: map-get($cyan, 'lighten-2'),
+  .display-1
+    color: map-get($cyan, 'lighten-2'),
+  a
+    color: map-get($cyan, 'lighten-2'),
+    text-decoration: none
+  a:hover
+    color: map-get($cyan, 'lighten-1'),
+  .error, .info, .primary, .warning, .success, .red, .blue-grey, .pink, .indigo, .purple, .deep-purple, .blue, .light-blue, .cyan, .teal, .green, .light-green, .lime, .yellow, .amber, .orange, .deep-orange, .brown
+    color: white!important
+
+
+.v-btn:not(.v-btn--outlined).primary .v-btn__content,
+.v-btn:not(.v-btn--outlined).secondary .v-btn__content,
+.v-btn:not(.v-btn--outlined).accent .v-btn__content,
+.v-btn:not(.v-btn--outlined).success .v-btn__content,
+.v-btn:not(.v-btn--outlined).error .v-btn__content,
+.v-btn:not(.v-btn--outlined).warning .v-btn__content,
+.v-btn:not(.v-btn--outlined).info .v-btn__content
+  color: #ffffff
+
+.theme--dark.v-list-item .v-list-item__subtitle, .theme--dark.v-list-item .v-list-item__action-text
+  color: map-get($cyan, 'darken-3'),
+
+.v-item-group.v-bottom-navigation .v-btn.v-size--default
+  height: inherit
+
+.theme--dark.v-sheet
+  background-color: #111111
+.v-list.v-sheet
+  background-color: #111111
+.theme--dark.v-subheader
+  color: map-get($cyan, 'lighten-1'),
+.theme--dark.v-label
+  color: map-get($cyan, 'darken-3')
+.theme--dark.v-text-field > .v-input__control > .v-input__slot:before
+  border-color: inherit
+.theme--dark.v-counter
+  color: map-get($cyan, 'darken-3')
+.theme--dark.v-icon
+  color: map-get($cyan, 'darken-3')
+.theme--dark.v-picker__body, .theme--dark.v-time-picker-clock, .theme--dark.v-stepper
+  background-color: #111111
+.v-picker__title
+  color: map-get($cyan, 'lighten-1')
+.theme--dark.v-data-table thead tr th
+  color: map-get($cyan, 'lighten-1')
+.theme--dark.v-data-table tbody tr.v-data-table__selected
+  background-color: map-get($cyan, 'lighten-1')
+  color: map-get($shades, 'white')
+.theme--dark.v-data-table tbody tr.v-data-table__selected .theme--dark.v-icon
+  color: map-get($shades, 'white')
+.theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content)
+  background-color: map-get($cyan, 'darken-3')
+  color: map-get($shades, 'white')
+.theme--dark.v-data-table tbody tr:hover:not(.v-data-table__expanded__content) .theme--dark.v-icon
+  color: map-get($shades, 'white')
+.theme--dark.v-timeline .v-timeline-item__dot
+  background-color: map-get($grey, 'lighten-5')
+.v-timeline .theme--dark.v-icon
+  color: map-get($shades, 'white')
+.theme--dark.v-navigation-drawer
+  background-color: #111111
