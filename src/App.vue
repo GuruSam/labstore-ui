@@ -2,7 +2,7 @@
   <v-app>
     <v-card>
       <Sidebar v-if="loggedIn"/>
-      <Header/>
+      <Header />
       <v-main id="page">
         <v-container class="mb-5" fluid>
           <div class="background-fade d-none d-lg-block">
@@ -12,12 +12,7 @@
             <Notification />
         </v-container>
       </v-main>
-
-      <v-footer app>
-        <v-card-text class="text-center">
-          {{ new Date().getFullYear() }} © <strong>The Sims Creative Club</strong>
-        </v-card-text>
-      </v-footer>
+      <Footer />
     </v-card>
   </v-app>
 </template>
@@ -25,6 +20,7 @@
 <script>
 import { mapState } from 'vuex'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Sidebar from './components/Sidebar'
 import Notification from './components/Notification'
 
@@ -33,7 +29,8 @@ export default {
   components: {
     Header,
     Sidebar,
-    Notification
+    Notification,
+    Footer
   },
   computed: mapState({
     loggedIn: state => state.auth.loggedIn
